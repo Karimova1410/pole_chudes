@@ -132,8 +132,17 @@ public class Main {
 
                             for (int in = 0; in < playersNumber; in++) {
 
-                                System.out.println(hints[randomNumber]);
-                                System.out.println(hiddenToString);
+                                 System.out.print(" ".repeat(padding));
+                                 System.out.println("\033[1;34m" + hints[randomNumber] + "\033[0m");
+
+
+
+                               
+                                 System.out.print(" ".repeat(padding2));
+
+                                 System.out.println(hiddenToString);
+                                
+                                
                                 System.out.println(playersNames.get(in) + " - it is your turn to guess the word.You need to write whole word");
 
                                 letter = scanner.next();
